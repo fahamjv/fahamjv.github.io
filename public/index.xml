@@ -2,9 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fahamjv</title>
-    <link>http://www.example.com/</link>
+    <link>https://www.fahamjv.com/</link>
     <description>Recent content on Fahamjv</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.fahamjv.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo is fun</title>
+      <link>https://www.fahamjv.com/posts/first-post/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fahamjv.com/posts/first-post/</guid>
+      <description>First post for testing. Hugo is fun and easy to use :D</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://www.fahamjv.com/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fahamjv.com/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+ https://github.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://www.fahamjv.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fahamjv.com/contact/</guid>
+      <description>Email me: faham.javadi1@gmail.com
+Follow me with @fahamjv handle.</description>
+    </item>
+    
   </channel>
 </rss>
