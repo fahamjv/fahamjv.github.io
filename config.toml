@@ -1,4 +1,4 @@
-baseURL = "https://www.fahamjv.com"
+baseURL = "https://fahamjv.github.io/"
 title = "Fahamjv"
 theme = "hugo-coder"
 languageCode = "en"
