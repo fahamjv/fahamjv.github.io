@@ -64,8 +64,8 @@ customJS = []
 # code = "code"
 
 # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
-# [params.cloudflare]
-# token = "token"
+[params.cloudflare]
+token = "df22a30e58d0443e96499b140bac9eda"
 
 # If you want to use Matomo(https://matomo.org) for analytics, add this section
 # [params.matomo]
