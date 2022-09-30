@@ -154,4 +154,4 @@ url = "contact/"
 [[languages.en.menu.main]]
 name = "SSH pub key"
 weight = 6
-url = "/pub.html"
+url = "/pub.txt"
