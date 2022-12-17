@@ -7,8 +7,9 @@ aliases = ["selenium-wire", "proxy", "crawling"]
 +++
 
 I'm crawling a website using [Selenium](https://pypi.org/project/selenium/) every 5 minutes to extract some data. After a few days, I noticed that the data is not updating anymore. So I curled the website and it returned 403 Forbidden Access!
-![403 forbidden](https://fahamjv.com/images/403-forbidden-error.png)
-yay, my VPS IP got banned. I tried to use some HTTP and HTTPS proxy servers in Selenium but that was so buggy! I couldn't make it after playing for hours with it!
+![403 forbidden](https://fahamjv.com/images/403-forbidden-error.png)\
+yay, my VPS IP got banned!
+I tried to use some HTTP and HTTPS proxy servers in Selenium but that was so buggy! I couldn't make it after playing for hours with it!
 After searching for a while, I found this thing called [selenium-wire](https://pypi.org/project/selenium-wire/). It's Selenium but with extra features!
 I've used [Webshare](https://www.webshare.io/?referral_code=wbj58rdo8cqi) proxies before, it's stable and ok, plus they offer a permanent free plan with 10 proxies!
 So, I wrote a simple API call to get all the proxies from webshare like this:
