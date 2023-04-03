@@ -9,12 +9,12 @@ pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 # Enable Disqus comments
-# disqusShortname = "yourdiscussshortname"
+disqusShortname = "yourdiscussshortname"
 
 [params]
 author = "Faham Javadi"
 description = "Faham Javadi's personal website"
-keywords = "blog,developer,personal"
+keywords = "blog,backend developer,personal"
 info = ["Back End Developer"]
 avatarURL = "images/avatar.jpg"
 favicon_32 = "images/favicon-32x32.png"
