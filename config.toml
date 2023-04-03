@@ -1,5 +1,5 @@
 baseURL = "https://fahamjv.github.io/"
-title = "Fahamjv — official website of Faham Javadi"
+title = "Fahamjv"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
