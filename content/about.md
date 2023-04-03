@@ -26,3 +26,4 @@ Experienced PHP stack developer with 5+ years of experience in building robust a
 * Familiarity with agile development methodologies
 * Good problem-solving skills and ability to work independently or as part of a team.
 
+I am excited to continue building my career as a PHP stack developer and contributing to the development of innovative and impactful web applications. I am eager to work with a dynamic team that shares my passion for continuous learning and development, and to take on new challenges that will help me grow as a professional.
