@@ -8,7 +8,7 @@ author = "Faham Javadi"
 
 Faham Javadi
 
-Back End Developer
+Backend Developer
 
 Professional Summary:
 

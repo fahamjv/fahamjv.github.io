@@ -1,5 +1,5 @@
 baseURL = "https://fahamjv.github.io/"
-title = "Fahamjv"
+title = "Fahamjv — official website of Faham Javadi"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -15,7 +15,7 @@ enableEmoji = true
 author = "Faham Javadi"
 description = "Faham Javadi's personal website"
 keywords = "blog,backend developer,personal"
-info = ["Back End Developer"]
+info = ["Backend Developer"]
 avatarURL = "images/avatar.jpg"
 favicon_32 = "images/favicon-32x32.png"
 favicon_16 = "images/favicon-16x16.png"
