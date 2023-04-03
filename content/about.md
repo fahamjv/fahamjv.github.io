@@ -7,7 +7,8 @@ author = "Hugo Authors"
 +++
 
 Faham Javadi
-Full Stack Developer
+
+Back End Developer
 
 Professional Summary:
 
@@ -16,6 +17,7 @@ Experienced PHP stack developer with 5+ years of experience in building robust a
 * Proficiency in PHP programming language
 * Knowledge of PHP frameworks such as Laravel, CodeIgniter, or Symfony
 * Familiarity with front-end development technologies such as HTML, CSS, and JavaScript
+* Experience with cloud services (AWS, Azure)
 * Experience with version control systems like Git
 * Ability to write efficient SQL queries and work with databases like MySQL or PostgreSQL
 * Understanding of software testing principles and experience with testing frameworks such as PHPUnit
