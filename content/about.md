@@ -3,7 +3,7 @@ title = "About"
 description = "Hugo, the world's fastest framework for building websites"
 date = "2019-02-28"
 aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+author = "Faham Javadi"
 +++
 
 Faham Javadi
@@ -15,7 +15,7 @@ Professional Summary:
 Experienced PHP stack developer with 5+ years of experience in building robust and scalable web applications. Skilled in PHP programming language, as well as PHP frameworks like Laravel, CodeIgniter, or Symfony. Proficient in front-end development technologies such as HTML, CSS, and JavaScript, with experience in integrating them into PHP applications. Strong understanding of software testing principles and experience with testing frameworks such as PHPUnit. Adept at writing efficient SQL queries and working with databases like MySQL or PostgreSQL. Known for proactive problem-solving and a passion for continuous learning and keeping up-to-date with emerging technologies in the field.
 
 * Proficiency in PHP programming language
-* Knowledge of PHP frameworks such as Laravel, CodeIgniter, or Symfony
+* Knowledge of PHP frameworks such as [Laravel](https://laravel.com/), CodeIgniter, or Symfony
 * Familiarity with front-end development technologies such as HTML, CSS, and JavaScript
 * Experience with cloud services (AWS, Azure)
 * Experience with version control systems like Git
