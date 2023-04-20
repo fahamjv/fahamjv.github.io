@@ -1,7 +1,9 @@
 +++
 title = "Contact"
+description = "Faham Javadi's personal website"
 slug = "contact"
 date = "2023-04-03"
+aliases = ["about-us", "contact"]
 author = "Faham Javadi"
 +++
 
