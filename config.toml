@@ -89,18 +89,18 @@ stylesrc = [
   "'unsafe-inline'",
   "https://fonts.googleapis.com/",
   "https://cdn.jsdelivr.net/",
-  "https://static.cloudflareinsights.com/",
+  "https://static.cloudflareinsights.com/"
 ]
 scriptsrc = [
   "'self'", 
   "'unsafe-inline'",
   "https://static.cloudflareinsights.com",
   "https://cloudflareinsights.com",
-  "https://www.googletagmanager.com"
+  "https://googletagmanager.com"
 ]
 prefetchsrc = ["'self'"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
-# connectsrc = ["'self'", "https://cloudflareinsights.com/"]
+connectsrc = ["'self'", "https://cloudflareinsights.com/"]
 
 [taxonomies]
 category = "categories"
