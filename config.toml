@@ -89,7 +89,8 @@ stylesrc = [
   "'unsafe-inline'",
   "https://fonts.googleapis.com/",
   "https://cdn.jsdelivr.net/",
-  "https://static.cloudflareinsights.com/"
+  "https://static.cloudflareinsights.com/",
+  "https://googletagmanager.com"
 ]
 scriptsrc = [
   "'self'", 
