@@ -100,9 +100,18 @@ scriptsrc = [
   "https://www.googletagmanager.com",
   "https://www.google-analytics.com"
 ]
+
 prefetchsrc = ["'self'"]
+
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
-connectsrc = ["'self'"]
+connectsrc = [
+  "'self'", 
+  "'unsafe-inline'",
+  "https://static.cloudflareinsights.com",
+  "https://cloudflareinsights.com",
+  "https://www.googletagmanager.com",
+  "https://www.google-analytics.com"
+]
 
 [taxonomies]
 category = "categories"
