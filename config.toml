@@ -102,7 +102,7 @@ scriptsrc = [
   "https://www.google-analytics.com",
   "https://www.formilla.com"
 ]
-prefetchsrc = ["'self'", "https://www.formilla.com"]
+prefetchsrc = ["'self'"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 connectsrc = ["'self'", "https://region1.google-analytics.com", "https://www.formilla.com"]
 
