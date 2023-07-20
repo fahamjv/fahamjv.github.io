@@ -104,7 +104,7 @@ scriptsrc = [
 ]
 prefetchsrc = ["'self'"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
-connectsrc = ["'self'", "https://region1.google-analytics.com"]
+connectsrc = ["'self'", "https://region1.google-analytics.com", "https://www.formilla.com"]
 
 [taxonomies]
 category = "categories"
