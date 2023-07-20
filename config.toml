@@ -78,11 +78,11 @@ id = "G-P8SV2S597J"
 
 # If you want to implement a Content-Security-Policy, add this section
 [params.csp]
-childsrc = ["'self'"]
+childsrc = ["'self'", "https://www.formilla.com"]
 fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
-formaction = ["'self'"]
-framesrc = ["'self'"]
-imgsrc = ["'self'"]
+formaction = ["'self'", "https://www.formilla.com"]
+framesrc = ["'self'", "https://www.formilla.com"]
+imgsrc = ["'self'", "https://www.formilla.com"]
 objectsrc = ["'none'"]
 stylesrc = [
   "'self'",
@@ -102,7 +102,7 @@ scriptsrc = [
   "https://www.google-analytics.com",
   "https://www.formilla.com"
 ]
-prefetchsrc = ["'self'"]
+prefetchsrc = ["'self'", "https://www.formilla.com"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 connectsrc = ["'self'", "https://region1.google-analytics.com", "https://www.formilla.com"]
 
