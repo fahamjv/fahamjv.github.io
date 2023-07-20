@@ -91,7 +91,7 @@ stylesrc = [
   "https://cdn.jsdelivr.net/",
   "https://static.cloudflareinsights.com/",
   "https://cloudflareinsights.com",
-  "https://formilla.com"
+  "https://www.formilla.com"
 ]
 scriptsrc = [
   "'self'", 
@@ -100,7 +100,7 @@ scriptsrc = [
   "https://cloudflareinsights.com",
   "https://www.googletagmanager.com",
   "https://www.google-analytics.com",
-  "https://formilla.com"
+  "https://www.formilla.com"
 ]
 prefetchsrc = ["'self'"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
