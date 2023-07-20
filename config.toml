@@ -79,7 +79,7 @@ id = "G-P8SV2S597J"
 # If you want to implement a Content-Security-Policy, add this section
 [params.csp]
 childsrc = ["'self'", "https://www.formilla.com"]
-fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
+fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/", "https://www.formilla.com"]
 formaction = ["'self'", "https://www.formilla.com"]
 framesrc = ["'self'", "https://www.formilla.com"]
 imgsrc = ["'self'", "https://www.formilla.com"]
