@@ -1,47 +1,54 @@
 +++
 author = "fahamjv"
-title = "Using proxy in Selenium"
+title = "Unlock Seamless Web Scraping with Selenium Wire Proxies"
 date = "2022-12-17"
-description = "How to use proxy in selenium-wire"
-aliases = ["selenium-wire", "proxy", "crawling"]
+description = "Discover how to overcome IP bans and ensure smooth web scraping using Selenium Wire proxies. Learn to integrate Webshare proxies seamlessly and unlock a reliable solution for your web data extraction needs."
+aliases = ["selenium-wire", "selenium-wire-proxies", "web-scraping", "proxy-integration", "webshare-proxies"]
 +++
 
-I'm crawling a website using [Selenium](https://pypi.org/project/selenium/) every 5 minutes to extract some data. After a few days, I noticed that the data is not updating anymore. So I curled the website and it returned 403 Forbidden Access!
-![403 forbidden](https://fahamjv.com/images/403-forbidden-error.png)\
-yay, my VPS IP got banned!
-I tried to use some HTTP and HTTPS proxy servers in Selenium but that was so buggy! I couldn't make it after playing for hours with it!
-After searching for a while, I found this thing called [selenium-wire](https://pypi.org/project/selenium-wire/). It's Selenium but with extra features!
-I've used [Webshare](https://www.webshare.io/?referral_code=wbj58rdo8cqi) proxies before, it's stable and ok, plus they offer a permanent free plan with 10 proxies!
-So, I wrote a simple API call to get all the proxies from webshare like this:
+In my web scraping journey with [Selenium](https://pypi.org/project/selenium/), I encountered a roadblock when the website I was scraping suddenly returned a "403 Forbidden Access" error. It turned out that my VPS IP had been banned.
+
+{{< figure src="/images/403-forbidden-error.png" alt="403 forbidden" align="center">}}
+
+To overcome this issue and ensure seamless web scraping, I explored using proxy servers with Selenium. After some trial and error, I discovered a reliable solution: [Selenium Wire](https://pypi.org/project/selenium-wire/).
+
+Selenium Wire is an extension of Selenium that offers additional features, including seamless proxy integration.
+
+For proxy, i had prior experience with [Webshare](https://www.webshare.io/?referral_code=wbj58rdo8cqi) proxies; they were stable and decent. Plus, they offered a permanent free plan with 10 proxies! So, I wrote a simple API call to retrieve all the proxies from Webshare like this:
 
 ```python
-def get_proxies():
-    response = requests.get(
-        "https://proxy.webshare.io/api/v2/proxy/list/?mode=direct&page=1&page_size=25",
-        headers={"Authorization": PROXY_API_KEY}
-    )
-    proxies = []
-    for proxy in response.json()['results']:
-        url = "http://{username}:{password}@{proxy_address}:{port}".format(
-            username=proxy['username'],
-            password=proxy['password'],
-            proxy_address=proxy['proxy_address'],
-            port=proxy['port'],
-        )
-        proxies.append({'http' : url})
+import requests
 
-    return proxies
+def get_proxies(api_key, page=1, page_size=25):
+    url = f"https://proxy.webshare.io/api/v2/proxy/list/?mode=direct&page={page}&page_size={page_size}"
+    headers = {"Authorization": api_key}
+    response = requests.get(url, headers=headers)
+
+    if response.status_code == 200:
+        proxies = []
+        for proxy in response.json().get('results', []):
+            proxies.append(f"http://{proxy['username']}:{proxy['password']}@{proxy['proxy_address']}:{proxy['port']}")
+        return proxies
+
+    print(f"Error fetching proxies: {response.status_code}")
+    return []
 ```
 
-Then we need to choose one of the proxies randomly and assign it to the webdriver, using the seleniumwire_options argument.
+To use these proxies with Selenium, follow these steps:
+
+1. Fetch a random proxy from the list obtained using the `get_proxies` function.
+2. Configure the Selenium WebDriver to use this proxy with Selenium Wire.
+
+Here's a snippet of the code:
 
 ```python
-seleniumwire_options = {
-    'proxy': {},
-}
-seleniumwire_options['proxy'] = random.choice(get_proxies())
-driver = webdriver.Chrome(options=options,
-    seleniumwire_options=seleniumwire_options)
+from seleniumwire import webdriver
+import random
+
+def configure_selenium_with_proxy(proxy_list, chrome_options):
+    proxy = random.choice(proxy_list)
+    return webdriver.Chrome(options=chrome_options, seleniumwire_options={'proxy': proxy})
 ```
-Sim Sala Bim !!! We are not banned anymore
+
+By implementing this approach with Selenium Wire, you can easily bypass IP bans and ensure uninterrupted web scraping.
 
