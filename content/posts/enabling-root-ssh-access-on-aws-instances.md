@@ -19,7 +19,7 @@ If you've encountered the SSH error message 'Please login as the user 'ubuntu' r
 
 1. **Log in as "ubuntu"**
    ```bash
-   ssh -i your-key.pem ubuntu@your-server-ip
+   ssh ubuntu@your-server-ip
 2. **Edit the SSH Configuration**
    ```bash
    sudo vim /etc/ssh/sshd_config
@@ -33,10 +33,10 @@ If you've encountered the SSH error message 'Please login as the user 'ubuntu' r
    PermitRootLogin yes
 4. **Edit the authorized_keys file**
    ```bash
-   vim ~/.ssh/authorized_keys
+   sudo vim /root/.ssh/authorized_keys
 5. **Remove or comment out the restrictive line**
    ```bash
     no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"ubuntu\" rather than the user \"root\".';echo;sleep 10"
 6. **Log in as root**
    ```bash
-    ssh -i your-key.pem root@your-server-ip
+    ssh root@your-server-ip
